@@ -1,4 +1,6 @@
 from cerionta import calculate_psnr;
+import json
+from preprocess import preprocess_image;
 
 import cv2
 
@@ -9,3 +11,7 @@ if __name__ == "__main__":
     # Calculați PSNR
     psnr_value = calculate_psnr(img_original, img_compressed)
     print("PSNR:", psnr_value)
+
+    img_compressed = preprocess_image(img_compressed)
+
+    print("SDadsad");
